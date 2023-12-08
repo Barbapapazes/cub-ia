@@ -48,10 +48,10 @@ function sendEmail() {
 <template>
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
-      <img src="/favicon.svg" />
-    <span>
-      {{ config.seo.siteName }}
-    </span>
+      <img src="/favicon.svg">
+      <span>
+        {{ config.seo.siteName }}
+      </span>
     </template>
     <template #right>
       <div class="hidden lg:block">

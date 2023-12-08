@@ -11,16 +11,16 @@ hero:
     height: 684
   links:
     - label: Nos formations
-      to: '/formations'
+      to: /formations
       size: xl
       ui:
         variant:
-          solid: 'shadow-none'
+          solid: shadow-none
     - label: Nos services
       size: xl
       color: primary
       variant: soft
-      to: '/services'
+      to: /services
 logos:
   title: Ils nous font confiance
   icons:
@@ -88,5 +88,5 @@ cta:
     - label: Nous contacter
       color: primary
       variant: soft
-      to: "/contact"
+      to: /contact
       size: xl
