@@ -51,7 +51,10 @@ function sendEmail() {
 <template>
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
-      {{ config.seo.siteName }}
+      <img src="/favicon.svg">
+      <span>
+        {{ config.seo.siteName }}
+      </span>
     </template>
     <template #right>
       <div class="hidden lg:block">

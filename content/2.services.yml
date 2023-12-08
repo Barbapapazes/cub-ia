@@ -1,2 +1,67 @@
 title: Services
 description: Découvrez nos services sur l'IA générative pour votre entreprise.
+plans:
+  - title: IA Française
+    description: Mise en place d'une IA générative sur nos serveurs français pour votre entreprise.
+    highlight: true
+    badge:
+      label: Pro
+    button:
+      label: Nous contacter
+      to: /contact
+    features:
+      - Mise en place d'une IA générative sur nos serveurs français.
+      - Vos données restent en France.
+      - Conserver votre souveraineté numérique.
+  - title: IA au cœur
+    description: Mise en place d'une IA générative sur vos serveurs pour votre entreprise.
+    badge:
+      label: Expert
+    button:
+      label: Nous contacter
+      to: /contact
+    features:
+      - Mise en place d'une IA générative sur vos serveurs.
+      - Vos données restent chez vous.
+      - Conserver votre souveraineté numérique.
+
+sections:
+  - title: Transformez votre Entreprise avec l'IA
+    description: Transformez Votre Entreprise avec l'IA
+    links:
+      - label: En Savoir Plus
+        color: gray
+        trailing-icon: i-heroicons-arrow-right
+        size: lg
+      - label: Demander une Démo
+        color: primary
+        size: lg
+    align: left
+    img:
+      src: https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - title: Garantie de Sécurité et Confidentialité
+    description: Notre engagement envers la sécurité des données est inébranlable. Bénéficiez d'une infrastructure solide qui assure la confidentialité de vos informations. Notre solution est conçue pour renforcer votre entreprise tout en préservant l'intégrité de vos données sensibles.
+    links:
+      - label: Découvrir nos Fonctionnalités de Sécurité
+        color: gray
+        trailing-icon: i-heroicons-arrow-right
+        size: lg
+      - label: Nous contacter
+        to: /contact
+        color: primary
+        size: lg
+    align: right
+    img:
+      src: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+cta:
+  title: Accélérer en toute confiance avec nos services
+  description: Appliquer une transformation sans compromis. Nos services d'IA novateurs vous offrent la clé pour accélérer votre entreprise tout en maintenant la confiance essentielle. De la sécurité inégalée à des solutions sur mesure, nous sommes là pour propulser votre entreprise vers l'avenir.
+  links:
+    - label: Programmer une démo
+      color: gray
+      trailing-icon: i-heroicons-arrow-right
+      size: lg
+    - label: Explorer nos cas clients
+      to: https://example.com
+      color: primary
+      size: lg
