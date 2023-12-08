@@ -29,7 +29,7 @@ useSeoMeta({
       />
 
       <ULandingFAQ
-        :items="page.faq.items"
+        :items="page.questions"
         :ui="{
           button: {
             label: 'font-semibold',
