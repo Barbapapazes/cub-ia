@@ -1,0 +1,17 @@
+title: FAQ
+description: Vous avez des questions ? Nous avons des réponses.
+navigation: false
+questions:
+  - label: Est-ce un service sécurisé ?
+    content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
+    defaultOpen: true
+  - label: Comment puis-je annuler mon abonnement ?
+    content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
+  - label: Comment fonctionne l'essai gratuit ?
+    content: Quis officia commodo magna eu qui aliquip duis.
+  - label: Puis-je changer de plan plus tard ?
+    content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
+  - label: Offrez-vous des remboursements ?
+    content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
+  - label: Offrez-vous un support ?
+    content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.

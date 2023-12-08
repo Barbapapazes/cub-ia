@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+import type { NuxtError } from '#app'
+
+defineProps<{
+  error: NuxtError
+}>()
+
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(), { default: () => [], transform: (items) => {
   for (const item of items) {
     if (item._path === '/blog' || item._path === '/formations' || item._path === '/services')
@@ -63,11 +69,13 @@ function sendEmail() {
     </template>
   </UHeader>
 
-  <UMain>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </UMain>
+  <UContainer>
+    <UMain>
+      <UPage>
+        <UPageError :error="error" />
+      </UPage>
+    </UMain>
+  </UContainer>
 
   <UFooter :ui="{ top: { wrapper: 'bg-blue-50 dark:bg-blue-950' } }">
     <template #top>

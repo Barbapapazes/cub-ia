@@ -1,0 +1,12 @@
+title: Formations
+description: Découvrez nos formations sur l'IA générative.
+section:
+  title: Des formations qui s'adaptent à vous
+  description: Nous proposons des formations sur mesure pour vous accompagner dans votre projet d'IA générative.
+  image: https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=3600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  links:
+    - label: Nous contacter
+      to: /contact
+      size: lg
+      color: gray
+      trailing-icon: i-heroicons-arrow-right

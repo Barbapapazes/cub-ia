@@ -1,0 +1,44 @@
+title: Tarification
+description: De nos formations à la carte à nos services d'IA générative, découvrez nos tarifs.
+plans:
+  - title: Formations
+    description: Sensibilisation, découverte et apprentissage de l'IA générative pour vous et vos équipes.
+    price: 1 000€
+    cycle: (à partir de)
+    badge:
+      label: Tout public
+    button:
+      label: Nos formations
+      to: /formations
+    features:
+      - Découverte de l'IA générative et de ses applications.
+      - Prise en main d'un outil d'IA générative.
+      - Conseil et accompagnement sur vos projets.
+  - title: IA Française
+    description: Mise en place d'une IA générative sur nos serveurs français pour votre entreprise.
+    highlight: true
+    scale: true
+    price: 5 000€
+    cycle: /mois
+    badge:
+      label: Pro
+    button:
+      label: Nous contacter
+      to: /contact
+    features:
+      - Mise en place d'une IA générative sur nos serveurs français.
+      - Vos données restent en France.
+      - Conserver votre souveraineté numérique.
+  - title: IA au cœur
+    description: Mise en place d'une IA générative sur vos serveurs pour votre entreprise.
+    price: 10 000€
+    cycle: /mois
+    badge:
+      label: Expert
+    button:
+      label: Nous contacter
+      to: /contact
+    features:
+      - Mise en place d'une IA générative sur vos serveurs.
+      - Vos données restent chez vous.
+      - Conserver votre souveraineté numérique.
