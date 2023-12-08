@@ -101,8 +101,38 @@ const config = useAppConfig()
           </template>
         </UDocsToc>
       </template>
-
-      <!-- Add testimonials (actually in dev in nuxt-ui-pro) -->
     </UPage>
+
+    <ULandingSection v-if="page && page.testimonials" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
+    <UPageColumns>
+      <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
+        <UPageCard>
+          <q class="italic text-lg text-gray-500 dark:text-gray-400">
+            {{ testimonial.quote }}
+          </q>
+
+          <template #footer>
+            <div class="flex items-center gap-3">
+              <UAvatar
+                :src="testimonial.author.avatar"
+                :alt="testimonial.author.name"
+                loading="lazy"
+                size="md"
+              />
+
+              <div class="text-sm">
+                <p class="font-medium text-gray-900 dark:text-white">
+                  {{ testimonial.author.name }}
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  {{ testimonial.author.title }}
+                </p>
+              </div>
+            </div>
+          </template>
+        </UPageCard>
+      </div>
+    </UPageColumns>
+  </ULandingSection>
   </UContainer>
 </template>

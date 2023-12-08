@@ -1,106 +1,59 @@
-title: Nuxt UI Pro - Landing template
-description: Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title:
+description: L’IA souveraine et sécurisée au cɶur de votre entreprise
 navigation: false
-# Il faut revoir le contenu et un peu l'organisation mais ça fait déjà une bonne base
 hero:
-  title: Build your app in seconds
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  title: Souveraine et Sécurisée
+  description: Déployer une IA au cɶur de votre entreprise pour tous vos collaborateurs
   screenshot:
-    src: https://volta.net/home/screenshot.png
-    alt: App screenshot
+    src: https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    alt: Photo d'une entreprise
     width: 1216
     height: 684
   links:
-    - label: Get started
-      to: '#features'
+    - label: Nos formations
+      to: '/formations'
       size: xl
-    - label: Documentation
+      ui:
+        variant:
+          solid: 'shadow-none'
+    - label: Nos services
       size: xl
       color: primary
       variant: soft
-      to: https://ui.nuxt.com/pro
-      target: _blank
+      to: '/services'
 logos:
-  title: Trusted by the world's best
+  title: Ils nous font confiance
   icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+    - i-ph-aperture-duotone
+    - i-ph-app-store-logo-duotone
+    - i-ph-anchor-duotone
+    - i-ph-apple-podcasts-logo-duotone
+    - i-ph-airplane-takeoff-duotone
 features:
-  title: Why choose our service?
+  title: Pourquoi nous faire confiance ?
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
-    - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
-      icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-      icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
-      icon: i-heroicons-chart-bar
-pricing:
-  title: A plan for every need
-  description: Pariatur laborum dolor ea commodo sit aute aliquip qui et cillum excepteur.
-  plans:
-    - title: Basic
-      description: A basic plan for individuals.
-      price: $9.99
-      align: top
-      button:
-        label: Get Started
-      features:
-        - 1 GB Storage
-        - 1 Email Account
-        - 1 Domain
-        - 1 Website
-        - 1 Database
-        - 1 SSL Certificate
-        - 1 Support Ticket
-    - title: Standard
-      description: A standard plan for small teams.
-      price: $19.99
-      highlight: true
-      align: top
-      button:
-        label: Get Started
-        color: primary
-      features:
-        - 10 GB Storage
-        - 10 Email Accounts
-        - 10 Domains
-        - 10 Websites
-        - 10 Databases
-        - 10 SSL Certificates
-        - 10 Support Tickets
-    - title: Premium
-      description: A premium plan for large teams.
-      price: $29.99
-      align: top
-      button:
-        label: Get Started
-      features:
-        - 100 GB Storage
-        - 100 Email Accounts
-        - 100 Domains
-        - 100 Websites
-        - 100 Databases
-        - 100 SSL Certificates
-        - 100 Support Tickets
+    - title: Sécurité des Données Renforcée
+      description: Notre solution permet à votre entreprise de conserver un contrôle total sur ses données, éliminant ainsi les risques de fuite ou d'accès non autorisé. Les données sensibles ne quittent jamais vos serveurs, assurant une sécurité maximale.
+      icon: i-ph-lock-key-duotone
+    - title: Personnalisation et Confidentialité
+      description: Développez du contenu génératif personnalisé sans compromettre la confidentialité des informations. Notre IA vous permet de créer du texte adapté à vos besoins spécifiques, tout en respectant les normes de confidentialité et de protection des données.
+      icon: i-ph-folder-lock-duotone
+    - title: Intégration Transparente
+      description: L'intégration de notre IA générative de texte se fait de manière transparente avec vos systèmes existants. Pas besoin de repenser vos infrastructures – une intégration fluide pour une adoption rapide.
+      icon: i-ph-arrows-clockwise-duotone
+    - title: Autonomie et Indépendance
+      description: Dites adieu à la dépendance envers des solutions externes. En déployant notre IA sur vos serveurs, vous gagnez une autonomie totale dans la génération de texte, éliminant ainsi la nécessité de compter sur des services tiers.
+      icon: i-ph-rocket-launch-duotone
+    - title: Adaptabilité à vos Besoins Métier
+      description: Personnalisez les modèles de texte en fonction de vos besoins métier spécifiques. Notre IA est conçue pour être flexible, s'adaptant à une variété d'applications, que ce soit pour la rédaction automatique de rapports, la création de contenu marketing, ou d'autres cas d'utilisation.
+      icon: i-ph-toolbox-duotone
+    - title: Maintenance et Support Dédiés
+      description: Profitez d'un service complet avec une équipe de support dédiée. Nous assurons la maintenance continue et sommes là pour vous aider à optimiser l'utilisation de notre IA générative au sein de vos serveurs.
+      icon: i-ph-hammer-duotone
 testimonials:
   headline: Testimonials
-  title: What our customers are saying.
+  title: Ce que nos clients disent de nous
   description: Proident sunt exercitation minim laborum enim laboris labore esse.
   items:
     - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
@@ -129,27 +82,11 @@ testimonials:
         title: CEO at Company
         avatar: https://i.pravatar.cc/100?img=8
 cta:
-  title: Get started today
+  title: Démarrer dès maintenant
   description: Nisi mollit id aliquip sunt est laborum sit sit.
   links:
-    - label: Sign up for free
+    - label: Nous contacter
       color: primary
       variant: soft
+      to: "/contact"
       size: xl
-faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
-  items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-      defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.

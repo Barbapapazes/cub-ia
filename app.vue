@@ -19,6 +19,9 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: color },
   ],
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  ],
   htmlAttrs: {
     lang: 'en',
   },
@@ -45,7 +48,10 @@ function sendEmail() {
 <template>
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
+      <img src="/favicon.svg" />
+    <span>
       {{ config.seo.siteName }}
+    </span>
     </template>
     <template #right>
       <div class="hidden lg:block">

@@ -27,7 +27,7 @@ useSeoMeta({
       :links="page.hero.links"
       :ui="{
         title: 'text-white selection:bg-primary-800',
-        description: 'text-primary-100 selection:bg-primary-800',
+        description: 'text-primary-100 selection:bg-primary-800'
       }"
     >
       <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4">
@@ -40,13 +40,12 @@ useSeoMeta({
     </ULandingHero>
 
     <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
-      <UPageGrid v-bind="page.pricing.grid">
+      <UPageGrid>
         <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
       </UPageGrid>
     </ULandingSection>
 
-    <!-- copier ça pour le mettre aussi dans le bas des formations -->
-    <ULandingSection id="testimonials" class="bg-gray-50" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
+    <ULandingSection v-if="page.testimonials" class="bg-gray-50 dark:bg-gray-900" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
       <UPageColumns>
         <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
           <UPageCard>
