@@ -4,7 +4,7 @@ export default defineAppConfig({
     gray: 'zinc',
   },
   seo: {
-    siteName: 'Lil\'IA',
+    siteName: 'Cub\'IA',
     tagLine: 'L\'IA souveraine dans votre entreprise',
   },
   header: {
@@ -31,8 +31,8 @@ export default defineAppConfig({
       {
         label: 'Services',
         children: [
-          { label: 'Lil\'IA Pro', to: '/services' },
-          { label: 'Lil\'IA Entreprise', to: '/services' },
+          { label: 'Cub\'IA Pro', to: '/services' },
+          { label: 'Cub\'IA Entreprise', to: '/services' },
         ],
       },
       {
