@@ -20,7 +20,7 @@ useHead({
     { key: 'theme-color', name: 'theme-color', content: color },
   ],
   link: [
-    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    { rel: 'icon', href: '/icon.png' },
   ],
   htmlAttrs: {
     lang: 'en',
@@ -48,7 +48,7 @@ function sendEmail() {
 <template>
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
-      <img src="/favicon.svg">
+      <img src="/icon.png" class="w-8 h-8">
       <span>
         {{ config.seo.siteName }}
       </span>
