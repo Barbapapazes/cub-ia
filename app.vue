@@ -46,10 +46,6 @@ function sendEmail() {
 </script>
 
 <template>
-  <a href="https://www.linkedin.com/posts/pepitecentre_9pp-activity-7199001146156351488-7evI" target="_blank" class="z-10 relative block px-4 py-2 text-sm text-red text-center">
-    Please, vote for our project on LinkedIn 🙏
-  </a>
-
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
       <img src="/icon.png" class="w-8 h-8">
