@@ -38,7 +38,13 @@ if (coursesError.value) {
       />
       <UPageBody>
         <UPageGrid v-if="courses">
-          <UPageCard v-for="course in courses" :key="course._path" :to="course._path" :description="course.description" :ui="{ base: 'flex flex-col', body: { base: 'grow' } }">
+          <UPageCard
+            v-for="course in courses"
+            :key="course._path"
+            :to="course._path"
+            :description="course.description"
+            :ui="{ base: 'flex flex-col', body: { base: 'grow' } }"
+          >
             <template #header>
               <h2 class="font-semibold text-lg">
                 {{ course.title }}

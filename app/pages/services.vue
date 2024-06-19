@@ -20,7 +20,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <UContainer v-if="page" :ui="{ base: 'mb-16 xl:mb-32' }">
+  <UContainer
+    v-if="page"
+    :ui="{ base: 'mb-16 xl:mb-32' }"
+  >
     <ULandingHero
       :title="page.title"
       :description="page.description"

@@ -38,24 +38,45 @@ const config = useAppConfig()
         </h2>
         <UForm class="mt-4 space-y-4">
           <div class="grid md:grid-cols-2 gap-4">
-            <UFormGroup label="Prénom" name="firstname">
-              <UInput placeholder="John" type="firstname" />
+            <UFormGroup
+              label="Prénom"
+              name="firstname"
+            >
+              <UInput
+                placeholder="John"
+                type="firstname"
+              />
             </UFormGroup>
 
-            <UFormGroup label="Nom" name="lastname">
-              <UInput placeholder="Doe" type="lastname" />
+            <UFormGroup
+              label="Nom"
+              name="lastname"
+            >
+              <UInput
+                placeholder="Doe"
+                type="lastname"
+              />
             </UFormGroup>
           </div>
 
-          <UFormGroup label="Email" name="email">
+          <UFormGroup
+            label="Email"
+            name="email"
+          >
             <UInput placeholder="john.doe@example.com" />
           </UFormGroup>
 
-          <UFormGroup label="Sujet" name="subject">
+          <UFormGroup
+            label="Sujet"
+            name="subject"
+          >
             <UInput placeholder="La grande thématique" />
           </UFormGroup>
 
-          <UFormGroup label="Message" name="message">
+          <UFormGroup
+            label="Message"
+            name="message"
+          >
             <UTextarea placeholder="Le message que vous souhaitez nous envoyer" />
           </UFormGroup>
 

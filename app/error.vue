@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+import type { NuxtError } from '#app'
+
+defineProps<{
+  error: NuxtError
+}>()
+
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(), { default: () => [], transform: (items) => {
   for (const item of items) {
     if (item._path === '/blog' || item._path === '/formations' || item._path === '/services')
@@ -18,9 +24,6 @@ useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: color },
-  ],
-  link: [
-    { rel: 'icon', href: '/icon.png' },
   ],
   htmlAttrs: {
     lang: 'en',
@@ -48,7 +51,10 @@ function sendEmail() {
 <template>
   <UHeader :links="mapContentNavigation(navigation)">
     <template #logo>
-      <img src="/icon.png" class="w-8 h-8">
+      <img
+        src="/icon.png"
+        class="w-8 h-8"
+      >
       <span>
         {{ config.seo.siteName }}
       </span>
@@ -57,7 +63,12 @@ function sendEmail() {
       <div class="hidden lg:block">
         <FollowMe :socials="config.socials" />
       </div>
-      <UTooltip v-if="config.header?.colorMode" class="mr-1 lg:mr-0 lg:ml-2" text="Toggle color mode" placement="bottom">
+      <UTooltip
+        v-if="config.header?.colorMode"
+        class="mr-1 lg:mr-0 lg:ml-2"
+        text="Toggle color mode"
+        placement="bottom"
+      >
         <UColorModeButton />
       </UTooltip>
     </template>
@@ -69,20 +80,36 @@ function sendEmail() {
     </template>
   </UHeader>
 
-  <UMain>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </UMain>
+  <UContainer>
+    <UMain>
+      <UPage>
+        <UPageError :error="error" />
+      </UPage>
+    </UMain>
+  </UContainer>
 
   <UFooter :ui="{ top: { wrapper: 'bg-blue-50 dark:bg-blue-950' } }">
     <template #top>
       <UFooterColumns :links="config.footer.links">
         <template #right>
-          <UFormGroup name="email" :label="config.footer.newsletter.label" size="lg">
-            <UInput v-model="email" type="email" :ui="{ icon: { trailing: { pointer: '' } } }">
+          <UFormGroup
+            name="email"
+            :label="config.footer.newsletter.label"
+            size="lg"
+          >
+            <UInput
+              v-model="email"
+              type="email"
+              :ui="{ icon: { trailing: { pointer: '' } } }"
+            >
               <template #trailing>
-                <UButton type="submit" size="2xs" color="black" :label="config.footer.newsletter.button" @click="sendEmail" />
+                <UButton
+                  type="submit"
+                  size="2xs"
+                  color="black"
+                  :label="config.footer.newsletter.button"
+                  @click="sendEmail"
+                />
               </template>
             </UInput>
           </UFormGroup>

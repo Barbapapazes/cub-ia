@@ -23,16 +23,31 @@ const config = useAppConfig()
 <template>
   <UContainer>
     <UPage v-if="page">
-      <UPageHeader :title="page.title" :description="page.description">
+      <UPageHeader
+        :title="page.title"
+        :description="page.description"
+      >
         <dl class="mt-8 flex justify-between text-gray-700 dark:text-gray-300 text-sm">
           <dt class="sr-only">
             Author
           </dt>
           <dd>
             <ol class="space-x-4">
-              <li v-for="author in page.authors" :key="author.name">
-                <ULink :to="author.social" target="_blank" rel="noopener" class="flex items-center gap-2">
-                  <UAvatar :src="author.picture" :alt="author.name" size="sm" />
+              <li
+                v-for="author in page.authors"
+                :key="author.name"
+              >
+                <ULink
+                  :to="author.social"
+                  target="_blank"
+                  rel="noopener"
+                  class="flex items-center gap-2"
+                >
+                  <UAvatar
+                    :src="author.picture"
+                    :alt="author.name"
+                    size="sm"
+                  />
                   <span>
                     {{ author.name }}
                   </span>
@@ -52,16 +67,28 @@ const config = useAppConfig()
       </UPageHeader>
 
       <UPageBody prose>
-        <ContentRenderer v-if="page.body" :value="page" />
+        <ContentRenderer
+          v-if="page.body"
+          :value="page"
+        />
       </UPageBody>
 
       <template #right>
-        <UDocsToc v-if="page.body?.toc" :links="page.body.toc.links" :title="config.toc?.title">
+        <UDocsToc
+          v-if="page.body?.toc"
+          :links="page.body.toc.links"
+          :title="config.toc?.title"
+        >
           <template #bottom>
-            <div v-if="page.resources" class="hidden lg:block space-y-6" :class="{ '!mt-6': page.body?.toc?.links?.length }">
+            <div
+              v-if="page.resources"
+              class="hidden lg:block space-y-6"
+              :class="{ '!mt-6': page.body?.toc?.links?.length }"
+            >
               <UDivider />
               <UPageLinks
-                :title="config.toc?.bottom?.title" :links="page.resources"
+                :title="config.toc?.bottom?.title"
+                :links="page.resources"
               />
             </div>
           </template>

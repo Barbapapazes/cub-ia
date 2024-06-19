@@ -30,24 +30,57 @@ useSeoMeta({
         description: 'text-primary-100 selection:bg-primary-800',
       }"
     >
-      <div v-if="page.hero.screenshot" class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4">
-        <img v-bind="page.hero.screenshot" :src="page.hero.screenshot.src" class="rounded-md shadow">
+      <div
+        v-if="page.hero.screenshot"
+        class="bg-white/10 ring-1 ring-white/20 rounded-2xl lg:-m-4 p-4"
+      >
+        <img
+          v-bind="page.hero.screenshot"
+          :src="page.hero.screenshot.src"
+          class="rounded-md shadow"
+        >
       </div>
 
-      <ULandingLogos :title="page.logos.title" align="center">
-        <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
+      <ULandingLogos
+        :title="page.logos.title"
+        align="center"
+      >
+        <UIcon
+          v-for="icon in page.logos.icons"
+          :key="icon"
+          :name="icon"
+          class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white"
+        />
       </ULandingLogos>
     </ULandingHero>
 
-    <ULandingSection id="features" :title="page.features.title" :description="page.features.description">
+    <ULandingSection
+      id="features"
+      :title="page.features.title"
+      :description="page.features.description"
+    >
       <UPageGrid>
-        <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
+        <ULandingCard
+          v-for="(item, index) in page.features.items"
+          :key="index"
+          v-bind="item"
+        />
       </UPageGrid>
     </ULandingSection>
 
-    <ULandingSection v-if="page.testimonials" class="bg-gray-50 dark:bg-gray-900" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
+    <ULandingSection
+      v-if="page.testimonials"
+      class="bg-gray-50 dark:bg-gray-900"
+      :headline="page.testimonials.headline"
+      :title="page.testimonials.title"
+      :description="page.testimonials.description"
+    >
       <UPageColumns>
-        <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
+        <div
+          v-for="(testimonial, index) in page.testimonials.items"
+          :key="index"
+          class="break-inside-avoid"
+        >
           <UPageCard>
             <q class="italic text-lg text-gray-500 dark:text-gray-400">
               {{ testimonial.quote }}

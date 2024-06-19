@@ -23,7 +23,10 @@ const config = useAppConfig()
 <template>
   <UContainer>
     <UPage v-if="page">
-      <UPageHeader :title="page.title" :description="page.description">
+      <UPageHeader
+        :title="page.title"
+        :description="page.description"
+      >
         <dl class="lg:hidden mt-8 flex gap-8 text-gray-700 dark:text-gray-300 text-sm">
           <dt class="sr-only">
             Niveau
@@ -56,13 +59,23 @@ const config = useAppConfig()
       </UPageHeader>
 
       <UPageBody prose>
-        <ContentRenderer v-if="page.body" :value="page" />
+        <ContentRenderer
+          v-if="page.body"
+          :value="page"
+        />
       </UPageBody>
 
       <template #right>
-        <UDocsToc v-if="page.body?.toc" :links="page.body.toc.links" :title="config.toc?.title">
+        <UDocsToc
+          v-if="page.body?.toc"
+          :links="page.body.toc.links"
+          :title="config.toc?.title"
+        >
           <template #bottom>
-            <div class="hidden lg:block space-y-6" :class="{ '!mt-6': page.body?.toc?.links?.length }">
+            <div
+              class="hidden lg:block space-y-6"
+              :class="{ '!mt-6': page.body?.toc?.links?.length }"
+            >
               <UDivider />
               <UPageLinks
                 title="Informations"
@@ -103,9 +116,18 @@ const config = useAppConfig()
       </template>
     </UPage>
 
-    <ULandingSection v-if="page && page.testimonials" :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
+    <ULandingSection
+      v-if="page && page.testimonials"
+      :headline="page.testimonials.headline"
+      :title="page.testimonials.title"
+      :description="page.testimonials.description"
+    >
       <UPageColumns>
-        <div v-for="(testimonial, index) in page.testimonials.items" :key="index" class="break-inside-avoid">
+        <div
+          v-for="(testimonial, index) in page.testimonials.items"
+          :key="index"
+          class="break-inside-avoid"
+        >
           <UPageCard>
             <q class="italic text-lg text-gray-500 dark:text-gray-400">
               {{ testimonial.quote }}

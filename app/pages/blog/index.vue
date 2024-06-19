@@ -39,7 +39,13 @@ if (articlesError.value) {
 
       <UPageBody>
         <UPageGrid v-if="articles">
-          <UPageCard v-for="article in articles" :key="article._path" :to="article._path" :description="article.description" :ui="{ base: 'flex flex-col', body: { base: 'grow' } }">
+          <UPageCard
+            v-for="article in articles"
+            :key="article._path"
+            :to="article._path"
+            :description="article.description"
+            :ui="{ base: 'flex flex-col', body: { base: 'grow' } }"
+          >
             <template #header>
               <h2 class="font-semibold text-lg">
                 {{ article.title }}
@@ -58,7 +64,13 @@ if (articlesError.value) {
                 </dt>
                 <dd>
                   <UAvatarGroup size="2xs">
-                    <UAvatar v-for="author in article.authors" :key="author.name" :name="author.name" :src="author.picture" :alt="`Photo de profil de ${author.name}`" />
+                    <UAvatar
+                      v-for="author in article.authors"
+                      :key="author.name"
+                      :name="author.name"
+                      :src="author.picture"
+                      :alt="`Photo de profil de ${author.name}`"
+                    />
                   </UAvatarGroup>
                 </dd>
               </dl>
