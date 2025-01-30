@@ -1,13 +1,15 @@
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
 
   extends: ['@nuxt/ui-pro'],
   modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint'],
 
+  devtools: { enabled: true },
+
   ui: {
     icons: ['simple-icons', 'ph'],
+  },
+  future: {
+    compatibilityVersion: 4,
   },
 
   eslint: {
@@ -15,6 +17,4 @@ export default defineNuxtConfig({
       stylistic: true, // <---
     },
   },
-
-  devtools: { enabled: true },
 })
